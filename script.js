@@ -8,7 +8,7 @@ const questions = [
     ],
   },
   {
-    text: "Ar esi kada pastebėjusi keistą vandens skonį, kvapą ar spalvą namuose?",
+    text: "Ar esi kada pastebėjęs(-usi) namuose geriamo vandens keistą skonį, kvapą ar spalvą?",
     options: [
       { label: "Taip, gana dažnai", points: 2 },
       { label: "Kartais pasitaiko", points: 1 },
@@ -24,7 +24,7 @@ const questions = [
     ],
   },
   {
-    text: "Ar tavo namuose gyvena maži vaikai arba laukiatės kūdikio?",
+    text: "Ar auginate mažus vaikus arba laukiatės kūdikio?",
     options: [
       { label: "Taip", points: 2 },
       { label: "Ne, bet planuojame ateityje", points: 1 },
@@ -79,6 +79,7 @@ const resultSection = document.getElementById("rezultatas");
 const resultTitle = document.getElementById("result-title");
 const resultText = document.getElementById("result-text");
 const restartBtn = document.getElementById("restart-btn");
+const restartInlineBtn = document.getElementById("restart-inline-btn");
 
 function renderQuestion() {
   const q = questions[currentIndex];
@@ -139,5 +140,6 @@ startBtn.addEventListener("click", () => {
 });
 
 restartBtn.addEventListener("click", restartQuiz);
+restartInlineBtn.addEventListener("click", restartQuiz);
 
 renderQuestion();
