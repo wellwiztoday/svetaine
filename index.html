@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ar mano vanduo kelia riziką? — Viktorija plius</title>
+<meta name="description" content="60 sekundžių testas apie tavo namų vandens kokybę. Sužinok, ar verta atkreipti dėmesį, ir pasikalbėk su Viktorija apie eSpring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <span class="logo">Viktorija <em>plius</em></span>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-blob hero-blob--one" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob--two" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">Trumpas vandens testas</p>
+      <h1>Ar žinai, kas tikrai teka iš tavo čiaupo?</h1>
+      <p class="hero-sub">60 sekundžių ir keli paprasti klausimai — tiek reikia, kad sužinotum, ar verta atkreipti dėmesį į savo namų vandenį.</p>
+      <button class="btn btn-primary" id="start-quiz-btn">Pradėti testą</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="apie-mane">
+    <div class="about-photo-wrap">
+      <img src="viktorija.jpg" alt="Viktorija" class="about-photo">
+    </div>
+    <div class="about-text">
+      <p class="eyebrow">Esu Viktorija</p>
+      <p>Daugiau nei 20 metų dirbu tiesioginių pardavimų srityje su Amway kompanija, kur esu pasiekusi Platina lygį. Šiandien nemažai savo laiko skiriu vandens kokybės temai — padedu žmonėms suprasti, kas iš tikrųjų teka iš jų čiaupo, ir kaip apie tai pasirūpinti.</p>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="quiz-section" id="testas">
+    <div class="quiz-card" id="quiz-card">
+
+      <div class="quiz-progress" aria-hidden="true">
+        <div class="quiz-progress-bar" id="progress-bar"></div>
+      </div>
+      <p class="quiz-step-label" id="step-label">Klausimas 1 iš 6</p>
+
+      <div class="quiz-questions" id="quiz-questions">
+        <!-- Questions injected by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section class="result-section" id="rezultatas" hidden>
+    <div class="result-card">
+      <p class="eyebrow" id="result-eyebrow">Tavo rezultatas</p>
+      <h2 id="result-title">—</h2>
+      <p id="result-text">—</p>
+
+      <div class="result-divider" aria-hidden="true"></div>
+
+      <p class="result-espring">
+        Aš pati jau daugiau nei 20 metų dirbu su Amway produktais, ir viena iš sričių, kuriai šiandien skiriu daugiausia dėmesio — vandens kokybė ir eSpring vandens valymo sistema. Jei nori pasikalbėti, kas tiksliai teka iš tavo čiaupo, ir ar tai tau aktualu — parašyk man žinutę, mielai pasidalinsiu, ką pati žinau.
+      </p>
+
+      <a class="btn btn-primary" href="https://www.instagram.com/vive_bzn21a/" target="_blank" rel="noopener">Rašyti Instagram</a>
+      <button class="btn btn-text" id="restart-btn">Pradėti testą iš naujo</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a href="https://www.instagram.com/vive_bzn21a/" target="_blank" rel="noopener" class="footer-ig">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.8.07 1.2.06 2 .25 2.7.53a5.4 5.4 0 0 1 2 1.3 5.4 5.4 0 0 1 1.3 2c.28.7.47 1.5.53 2.7.06 1.2.07 1.6.07 4.8s0 3.6-.07 4.8c-.06 1.2-.25 2-.53 2.7a5.4 5.4 0 0 1-1.3 2 5.4 5.4 0 0 1-2 1.3c-.7.28-1.5.47-2.7.53-1.2.06-1.6.07-4.8.07s-3.6 0-4.8-.07c-1.2-.06-2-.25-2.7-.53a5.4 5.4 0 0 1-2-1.3 5.4 5.4 0 0 1-1.3-2c-.28-.7-.47-1.5-.53-2.7C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.8c.06-1.2.25-2 .53-2.7a5.4 5.4 0 0 1 1.3-2 5.4 5.4 0 0 1 2-1.3c.7-.28 1.5-.47 2.7-.53C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52 0-4.76.07-1 .05-1.5.21-1.86.35-.47.18-.8.4-1.15.75-.35.35-.57.68-.75 1.15-.14.36-.3.86-.35 1.86C3.02 8.48 3 8.85 3 12s0 3.52.07 4.76c.05 1 .21 1.5.35 1.86.18.47.4.8.75 1.15.35.35.68.57 1.15.75.36.14.86.3 1.86.35 1.24.07 1.61.07 4.76.07s3.52 0 4.76-.07c1-.05 1.5-.21 1.86-.35.47-.18.8-.4 1.15-.75.35-.35.57-.68.75-1.15.14-.36.3-.86.35-1.86.07-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.05-1-.21-1.5-.35-1.86a3.1 3.1 0 0 0-.75-1.15 3.1 3.1 0 0 0-1.15-.75c-.36-.14-.86-.3-1.86-.35C15.52 4 15.15 4 12 4zm0 3.4A4.6 4.6 0 1 1 12 16.6 4.6 4.6 0 0 1 12 7.4zm0 1.8a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zm4.8-2a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16z"/></svg>
+    <span>@vive_bzn21a</span>
+  </a>
+  <p class="footer-brand">Viktorija plius</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
